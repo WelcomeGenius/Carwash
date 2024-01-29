@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     width: 100%;
-    background: #00407cf5;
+    background: #1c5691ed;
     font-family: math;
 }
 
@@ -23,10 +23,6 @@ header a {
 
 .last-child  {
     color: white;
-}
-
-.responsive-navbar {
-    visibility: hidden;
 }
 
 .leading-carwash {
@@ -54,9 +50,20 @@ header ul {
     align-items: center;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 0px;
     margin: 0px;
+}
+
+.header-first-child {
+    max-width: 250px;
+    height: 35px;
+    background: black;
+    position: absolute;
+    z-index: 100;
+    left: 0px;
+    right: 100px;
+    clip-path: polygon(0 1%, 100% 0, 84% 100%, 0% 100%);
 }
 
 
@@ -65,12 +72,16 @@ header li {
     text-decoration: none;
     list-style: none;
     font-weight: 600;
-    margin-right: 7%;
+    margin-right: 5%;
     cursor: pointer;
 }
 
+ ul > li:nth-child(6){
+    margin-right: 150px;
+ }
+
 header li:last-child {
-    width: 300px;
+    width: 200px;
     background-color: black;
     align-items: center;
     display: flex;
@@ -98,15 +109,15 @@ header li:last-child {
 .background-display div div h2 {
     color: white;
     text-transform: uppercase;
-    font-size: 50px;
-    width: 300px;
+    font-size: 65px;
+    width: 400px;
     margin-bottom: 20px;
+    font-weight: 900;
 }
 
 .background-display div div p {
     color: white;
-    font-size: 20px;
-    margin: 10px;
+    font-size: 25px;
 }
 
 .background-display button {
@@ -116,9 +127,8 @@ header li:last-child {
     text-transform: uppercase;
     background: black;
     color: white;
-    margin-top: 50px;
+    margin: 20px 0px;
     align-items: center;
-    margin-left: 50px;
 }
 
 .first-aside i {
@@ -140,20 +150,21 @@ header li:last-child {
 }
 
 table, th, td {
-    color: white;
-    border: 1px solid ;
-    width: 85%;
-        line-height: 5px;
-        margin: 0px auto auto;
-        font-size: 30px;
-        text-align: center;
-        border-collapse: collapse;
-        text-transform: uppercase;
-        margin-top: 10px;
-    } 
+color: white;
+border: 1px solid ;
+width: 85%;
+line-height: 5px;
+margin: 0px auto auto;
+font-size: 30px;
+text-align: center;
+border-collapse: collapse;
+text-transform: uppercase;
+margin-top: 10px;
+height: 100px;
+} 
 
     table p {
-        color: aquamarine;
+        color: aqua;
         font-size: 15px;
     }
 
@@ -170,7 +181,6 @@ table, th, td {
         font-size: 12px;
         color: aquamarine;
         text-transform: uppercase;
-        margin-top: 100px;
     }
     
     .services h3 {
@@ -194,10 +204,11 @@ table, th, td {
     .services {
         margin-left: 8%;
         margin-bottom: 100px;
+        margin-top: 200px;
     }
 
      .images img {
-        width: 300px;
+        max-width: 300px;
         height: 250px;
         clip-path: polygon(85% 0, 120% 50%, 50% 10000%, 0 0%);
         mask-image: linear-gradient(to bottom, black 55%, rgba(0, 0, 0, 0.01) 90%);
@@ -207,8 +218,6 @@ table, th, td {
     .images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    margin-left: 100px;
     }
 
     .images h3 {
@@ -217,49 +226,41 @@ table, th, td {
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-    margin-left: -75px;
-    margin-bottom: 30px;
+    margin: 0px;
     }
-
-.images > div:nth-child(4){
-    width: max-content;
-    margin-left: 50px;
-     }
 
      .images button {
     width: max-content;
     background: none;
-    color: aquamarine;
+    color: aqua;
     border: none;
     font-size: 13px;
     text-align: center;
-    margin-left: 100px;
     text-transform: uppercase;
-    margin-bottom: 50px;
-    padding: 5px;
+    margin: 20px 0px 50px 0px;
+    padding: 10px;
     line-height: 5px;
+    border-bottom: 2px solid aqua;
     }
 
-    .images button:hover {
-        box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
-        border: 2px solid #15f4ee;
-        border-radius: 25px;
-        width: 150px;
-        height: 50px;
-        margin-left: 75px;
-    }
+.images div {
+max-width: 250px;
+height: 300px;
+text-align: center;
+margin: auto auto 100px auto;
+}
 
-    .checkbox {
-    width: 90%;
-    height: 150px;
-    background: aquamarine;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-transform: capitalize;
-    margin-top: 50px;
-    }
+.checkbox {
+width: 90%;
+height: 150px;
+background: aqua ;
+margin: auto;
+display: flex;
+justify-content: space-around;
+align-items: center;
+text-transform: capitalize;
+margin-top: 50px;
+}
 
     .checkbox h2 {
         font-size: 25px;
@@ -267,7 +268,7 @@ table, th, td {
     }
 
     .checkbox button {
-        padding: 15px 50px 15px 50px;
+        padding: 15px 50px;
         text-transform: uppercase;
         background: black;
         color: white;
@@ -281,25 +282,26 @@ table, th, td {
 }
 
 .down-images img {
-    width: 280px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     margin-top: 50px;
 }
 
 .our-best {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     color: white;
     align-items: center;
-    margin: 50px 15%;
+    margin: 50px auto;
     width: 85%;
     text-align: center;
+    font-weight: 900;
 }
 
 
 .our-best h2 {
     font-size: 60px;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
 .our-best p {
@@ -325,9 +327,9 @@ table, th, td {
 
  .process {
     width: 90%;
-    background: lightblue;
+    background: rgba(0, 162, 255, 0.90);
     margin: auto;
-    height: 70vh;
+    height: 80vh;
     mask-image: linear-gradient(to bottom, black 55%, rgba(0, 0, 0, 0.01) 90%);
  }
 
@@ -339,15 +341,16 @@ table, th, td {
  }
 
  .process h3 {
-     margin: 0px;
     padding: 0px 5px;
     color: black;
+    margin: 10px 0px;
  }
  
  .process h2 {
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0px;
  }
 
  section:nth-child(6) > div > div {
@@ -363,17 +366,7 @@ table, th, td {
  .responsive-process {
     visibility: hidden;
  }
-
- .our-process div {
-    width: 50px;
-    height: 50px;
-    background: deepskyblue;
-    text-align: center;
-    color: black;
-    margin: 10px;
-    align-items: center;
- }
-
+ 
  .our-process div h3 {
     width: fit-content;
     text-align: center;
@@ -381,7 +374,19 @@ table, th, td {
     margin-top: 40px;
     display: flex;
     justify-content: flex-start;
+    color: white;
  }
+
+ .our-process div {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 255, 49, 0.55);
+    text-align: center;
+    color: black;
+    margin: 0px 10px;
+    align-items: center;
+ }
+
 
  .locations {
     margin-left: 5%;
@@ -659,336 +664,3 @@ footer hr {
     cursor: pointer;
 
  }
-
-
-    @media (max-width: 800px) {
-        header ul {
-            flex-direction: column;
-            margin-top: 60px;
-            margin-bottom: 0px;
-        }
-        
-        .responsive-navbar {
-            visibility: visible;
-            width: 100%;
-            height: 50px;
-            background: black;
-            margin-top: 20px;
-            position: fixed;
-            display: flex;
-            justify-content: end;
-            margin: auto;
-        }
-        
-        .fa-times {
-        visibility: hidden !important;
-        }
-
-        .responsive-navbar i {
-            font-size: 20px;
-            margin-left: 50px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-        }
-
-        .navbar-icon {
-            align-content: end;
-            text-align: end;
-        }
-
-    
-        body {
-            width: -webkit-fill-available;
-            /* overflow: hidden; */
-        }
-    
-        header {
-            background: black;
-            width: 300px;
-            height: 100vh;
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin-top: 0px;
-            color: white;
-            visibility: hidden;
-        }
-    
-        header li {
-            margin-top: 50px;
-        }
-    
-        header li:last-child {
-            visibility: hidden;
-        }
-    
-        .navbar-icon {
-            visibility: visible;
-            cursor: pointer;
-        }
-    
-        .fa {
-            font-size: 30px;
-            margin-bottom: 0px;
-            margin-left: 10px;
-            margin-top: 10px;
-            cursor: pointer;
-            visibility: visible;
-        }
-    
-        table, th, td {
-            width: 95%;
-            line-height: 3px;
-            font-size: 20px;
-            text-align: center;
-            margin-top: 10px;
-        } 
-    
-        table p {
-            font-size: 10px;
-        }
-    
-        table h3 {
-            font-size: 13px;
-        }
-
-        .background-display div div h2 {
-            font-size: 25px;
-            margin-left:  100px;
-        }
-
-        .background-display div div p {
-            font-size: 15px;
-            margin-left: 100px;
-        }
-
-        .background-display button {
-            font-size: 10px;
-            margin-left: 100px;
-        }
-
-        .services p {
-            font-size: 8px;
-        }
-
-        .services hr {
-            left: 120px;
-        }
-
-        .services h3 {
-            font-size: 20px;
-        }
-
-        .images {
-            grid-template-columns: 1fr;
-            align-items: center;
-            margin: auto;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .images img {
-            width: 200px;
-            height: 200px;
-        }
-
-        .images h3 {
-            font-size: 18px;
-            /* margin-left: -200px; */
-            margin: auto;
-        }
-
-
-        .images div {
-            margin: auto;
-        }
-
-        .images button {
-            font-size: 10px;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            /* margin-right: auto; */
-        }   
-
-        .checkbox h2 {
-            font-size: 15px;
-        }
-
-        .checkbox button {
-            padding: 5px;
-            font-size: 10px;
-        }
-
-        .leading-carwash h2 {
-            font-size: 15px;
-            width: 75%;
-        }
-
-        .leading-carwash p {
-            font-size: 10px;
-            margin-top: 2px;
-        }
-
-        .down-images {
-            flex-direction: column;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        .down-images img {
-            margin-right: auto;
-            margin-left: auto;
-            width: 70%;
-            height: 50vh;
-        }
-        .process p {
-            font-size: 10px;
-        }
-
-        .process h3 {
-            font-size: 15px;
-        }
-
-        .process h2 {
-            font-size: 20px;
-        }
-
-        .our-process {
-            visibility: hidden;
-        }
-
-        .responsive-process {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            visibility: visible;
-            margin-top: -120px;
-        }
-
-        .down-images img {
-            width: 200px;
-            height: 200px;
-        }
-
-        .responsive-process h3 {
-            font-size: 10px;
-        }
-
-        .responsive-process div {
-            margin-top: 15px;
-        }
-
-        .locations p {
-            font-size: 10px;
-        }
-
-        .locations hr {
-            visibility: hidden;
-        }
-
-        .locations h2 {
-            font-size: 20px;
-        }
-
-        .our-process div {
-            width: 50px;
-            height: 50px;
-            background: blue;
-        }
-
-        .location-container {
-            display: inline-block;
-            grid-area: 20px 20px;
-        }
-
-        .location-subcontainer {
-            grid-template-columns: 1fr;
-            align-items: center;
-            margin-left: auto;
-            margin-right: auto;
-            transform: translateX(-50);
-        }
-
-        .contact-form {
-            margin: auto;
-            margin-top: 20px;
-            transform: translateX(-25px);
-        }
-
-        .contact-form .submit {
-            font-size: 15px;
-        }
-
-        .our-best {
-            width: fit-content;
-        }
-
-        .our-best h2 {
-            font-size: 20px;
-        }
-
-        .testimonials h2 {
-            font-size: 20px;
-        }
-
-        .testimonials p {
-            font-size: 10px;
-        }
-
-        .testimonials i {
-            margin: 0px;
-            margin-bottom: 10px;
-        }
-
-        .slider-p p {
-            width: 150px;
-        }
-
-        .slider-p h3 {
-            margin-top: 0px;
-        }
-
-        .slider-p img {
-            width: 50px;
-            height: 50px;
-            margin-left: auto;
-            margin-bottom: 10px;
-            margin-top: 0px;
-        }
-
-        .slider-p  {
-            width: fit-content;
-        }
-
-        .our-best p {
-            font-size: 10px;
-        }
-
-        footer {
-            width: 100%;
-            margin: auto;
-        }
-
-        footer hr {
-            width: 30px;
-        }
-
-        footer p {
-            font-size: 10px;
-            padding: 0px;
-            margin-top: 20px;
-        }
-
-        footer i {
-            font-size: 10px;
-        }
-
-        footer a {
-            font-size: 10px;
-            margin: 10px;
-        }
-    }
